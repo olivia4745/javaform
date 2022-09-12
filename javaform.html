@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javaform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2ea7e8fef.js" crossorigin="anonymous"></script>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="image"></div>
+            <div class="text">Start for free and get <br> attractive offers today!</div>
+        </div>
+
+        <form id="form">
+
+            <div class="social">
+                <div class="title">Get Started</div>
+                <div class="question">
+                    Already have an account? <br>
+                    <span>Sign in</span>
+                </div><br>
+
+                <div class="btn">
+                    <div class="btn-1">
+                        <img src="https://img.icons8.com/color/30/FFFFFF/google-logo.png"/>
+                        Sign Up
+                    </div>
+                    <div class="btn-2">
+                        <img src="https://img.icons8.com/glyph-neue/30/ffffff/facebook-new.png"/>
+                        Sign up
+                    </div>
+                </div>
+
+                <br><div class="or">Or</div>
+
+            </div>
+            <!-- /**
+             * ! user name input starts here 
+            **/ -->
+            <div>
+                <label for="username">User Name</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="John Doe" minlength="8">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+
+            <!-- /**
+             * ! email input starts here 
+            **/ -->
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="abc@gmail.com">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+
+            <!-- /**
+             * ! password input starts here 
+            **/ -->
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="........">
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-regular fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </div>
+    <script src="javaform.js"></script>
+</body>
+
+</html>
